@@ -1,0 +1,23 @@
+---
+interface Props {
+  questions: string[];
+}
+
+const { questions } = Astro.props;
+---
+{questions.length > 0 && (
+  <section class="section" id="questions" aria-labelledby="questions-heading">
+    <div class="container">
+      <p class="section__eyebrow"><span class="section__eyebrow-index">05</span> · Bring to your appointment</p>
+      <span class="section__icon section__icon--overview" aria-hidden="true">🩺</span>
+      <h2 id="questions-heading">Questions to ask your doctor</h2>
+      <p>
+        A starting point for your next appointment — not a substitute for it. Print this
+        page or bring it up on your phone.
+      </p>
+      <ul class="questions-list">
+        {questions.map((question) => <li>{question}</li>)}
+      </ul>
+    </div>
+  </section>
+)}

@@ -1,0 +1,72 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const pillars = [
+  {
+    title: "Global & free",
+    description: "Accessible to anyone, anywhere, regardless of income or location.",
+  },
+  {
+    title: "Informs, not replaces",
+    description: "Built to support conversations with doctors — never to substitute for one.",
+  },
+  {
+    title: "Clarity over jargon",
+    description: "Complex research translated into language anyone can understand.",
+  },
+];
+
+const boundaries = [
+  "A replacement for a doctor, specialist, or care team",
+  "A diagnostic tool",
+  "A forum for unverified anecdotes or crowdsourced advice",
+  "A source of medical, dietary, or treatment decisions made without a clinician",
+];
+---
+<BaseLayout
+  title="About"
+  description="Helios is a single, trustworthy starting point for anyone who has just been told they have a medical condition — and a companion to care, not a replacement for it."
+>
+  <div class="hero-band">
+    <div class="condition-hero container">
+      <p class="condition-hero__eyebrow">About Helios</p>
+      <h1>A single, trustworthy starting point.</h1>
+      <p class="condition-hero__summary">
+        For anyone who has just been told they have a medical condition — pointing
+        toward validated science, not noise.
+      </p>
+    </div>
+  </div>
+
+  <section class="section" id="vision" aria-labelledby="vision-heading">
+    <div class="container">
+      <p class="section__eyebrow">The vision</p>
+      <span class="section__icon section__icon--overview" aria-hidden="true">🎯</span>
+      <h2 id="vision-heading">What Helios is for</h2>
+      <div class="pillar-grid">
+        {pillars.map((pillar) => (
+          <article class="card">
+            <h3>{pillar.title}</h3>
+            <p>{pillar.description}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="boundaries" aria-labelledby="boundaries-heading">
+    <div class="container">
+      <p class="section__eyebrow">What this platform is not</p>
+      <span class="section__icon section__icon--treatments" aria-hidden="true">🚫</span>
+      <h2 id="boundaries-heading">A companion to care, not a substitute</h2>
+      <p>Helios is meant to be brought to appointments, not to replace them — a way to ask better questions and understand the answers, grounded in validated science. It is not:</p>
+      <ul class="boundaries-list">
+        {boundaries.map((item) => <li>{item}</li>)}
+      </ul>
+      <p>
+        Curious how we decide what counts as a trustworthy source? Read our
+        <a href={`${import.meta.env.BASE_URL}sourcing/`}>sourcing standards</a>.
+      </p>
+    </div>
+  </section>
+</BaseLayout>

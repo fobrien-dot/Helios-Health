@@ -1,0 +1,58 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const included = [
+  "Peer-reviewed journals and published studies",
+  "Recognized medical institutions & academic centers",
+  "Vetted patient-advocacy and research organizations",
+  "Clear citation on every claim, always traceable",
+  "Ongoing review to keep information current",
+];
+
+const excluded = [
+  "Unverified forums and social media threads",
+  "Influencer or wellness-brand content",
+  "Unproven “cure” or miracle-treatment claims",
+  "Anecdote presented as clinical evidence",
+  "Anything without a checkable, credible source",
+];
+---
+<BaseLayout
+  title="How we source information"
+  description="Helios only draws on peer-reviewed research, recognized institutions, and vetted advocacy organizations — never forums, influencers, or unproven claims."
+>
+  <div class="hero-band">
+    <div class="condition-hero container">
+      <p class="condition-hero__eyebrow">Methodology</p>
+      <h1>Sourced, not scraped.</h1>
+      <p class="condition-hero__summary">
+        Every claim on Helios is traceable back to its original source. Here's exactly
+        what that standard includes — and what it rules out.
+      </p>
+    </div>
+  </div>
+
+  <section class="section" id="sourcing" aria-labelledby="sourcing-heading">
+    <div class="container">
+      <div class="sourcing-grid">
+        <article class="card sourcing-card sourcing-card--included">
+          <h3>Included</h3>
+          <ul class="sourcing-list sourcing-list--included">
+            {included.map((item) => <li>{item}</li>)}
+          </ul>
+        </article>
+        <article class="card sourcing-card sourcing-card--excluded">
+          <h3>Excluded</h3>
+          <ul class="sourcing-list sourcing-list--excluded">
+            {excluded.map((item) => <li>{item}</li>)}
+          </ul>
+        </article>
+      </div>
+      <p>
+        Every condition page also lists a "last reviewed" and "next review due" date,
+        plus a short content history, so you can see when it was last checked against
+        current research.
+      </p>
+    </div>
+  </section>
+</BaseLayout>

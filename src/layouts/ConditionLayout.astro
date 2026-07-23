@@ -4,6 +4,7 @@ import Overview from "../components/Overview.astro";
 import ResearchLibrary from "../components/ResearchLibrary.astro";
 import Lifestyle from "../components/Lifestyle.astro";
 import Treatments from "../components/Treatments.astro";
+import QuestionsToAsk from "../components/QuestionsToAsk.astro";
 
 interface ResearchStudy {
   title: string;
@@ -12,6 +13,7 @@ interface ResearchStudy {
   year: number;
   url: string;
   summary: string;
+  sourceType: "peer-reviewed-journal" | "institution" | "advocacy-org";
 }
 
 interface LifestyleEntry {
@@ -25,16 +27,25 @@ interface TreatmentEntry {
   description: string;
 }
 
+interface ChangelogEntry {
+  date: string;
+  summary: string;
+}
+
 interface Props {
   name: string;
   shortName: string;
   alsoKnownAs: string[];
   summary: string;
+  category: "rare-disease" | "cancer" | "chronic-autoimmune";
   overview: { whatIsIt: string; keyPoints: string[] };
   research: ResearchStudy[];
   lifestyle: LifestyleEntry[];
   treatments: TreatmentEntry[];
+  questionsToAsk: string[];
   lastReviewed: string;
+  nextReviewDue: string;
+  changelog: ChangelogEntry[];
   disclaimer: string;
 }
 
@@ -43,25 +54,51 @@ const {
   shortName,
   alsoKnownAs,
   summary,
+  category,
   overview,
   research,
   lifestyle,
   treatments,
+  questionsToAsk,
   lastReviewed,
+  nextReviewDue,
+  changelog,
   disclaimer,
 } = Astro.props;
+
+const categoryLabels: Record<Props["category"], string> = {
+  "rare-disease": "Rare disease",
+  cancer: "Cancer",
+  "chronic-autoimmune": "Chronic & autoimmune",
+};
 ---
 <BaseLayout title={name} description={summary}>
   <div class="hero-band">
     <div class="condition-hero container">
       <p class="condition-hero__eyebrow">Condition guide · {shortName}</p>
+      <span class="tag category-tag">{categoryLabels[category]}</span>
       <h1>{name}</h1>
       {alsoKnownAs.length > 0 && (
         <p class="condition-hero__aka">Also known as: {alsoKnownAs.join(", ")}</p>
       )}
       <p class="condition-hero__summary">{summary}</p>
-      <p class="last-reviewed">Last reviewed {lastReviewed}</p>
+      <p class="last-reviewed">
+        Last reviewed {lastReviewed} · Next review due {nextReviewDue}
+      </p>
+      {changelog.length > 0 && (
+        <details class="changelog">
+          <summary>Content history</summary>
+          <ul>
+            {changelog.map((entry) => (
+              <li><strong>{entry.date}</strong> — {entry.summary}</li>
+            ))}
+          </ul>
+        </details>
+      )}
       <div class="notice" role="note">{disclaimer}</div>
+      <button type="button" class="print-button no-print" onclick="window.print()">
+        Print this page &#128424;
+      </button>
     </div>
   </div>
 
@@ -69,4 +106,5 @@ const {
   <ResearchLibrary studies={research} />
   <Lifestyle entries={lifestyle} />
   <Treatments treatments={treatments} />
+  <QuestionsToAsk questions={questionsToAsk} />
 </BaseLayout>

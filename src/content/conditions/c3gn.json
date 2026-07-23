@@ -3,6 +3,17 @@
   "shortName": "C3GN",
   "alsoKnownAs": ["C3G", "C3 glomerulopathy (umbrella term that also includes dense deposit disease)"],
   "summary": "A rare kidney disease where part of the immune system, called the complement system, mistakenly damages the kidneys' filtering units.",
+  "category": "rare-disease",
+  "symptoms": [
+    "blood in urine",
+    "protein in urine",
+    "foamy urine",
+    "swelling in legs or around the eyes",
+    "high blood pressure",
+    "declining kidney function",
+    "low complement (C3) blood levels",
+    "kidney disease of unknown cause"
+  ],
   "overview": {
     "whatIsIt": "C3 glomerulonephritis (C3GN) is a rare kidney disease in which part of the immune system called the complement system becomes overactive and under-controlled. This drives a protein called C3 to build up inside the glomeruli — the kidneys' tiny filtering units — where it triggers ongoing inflammation and, over time, scarring. C3GN is one of two related conditions, alongside dense deposit disease (DDD), that doctors group together under the umbrella term C3 glomerulopathy (C3G) because they share the same underlying complement problem. In most people, C3G is driven by autoantibodies that overactivate the complement system; in a smaller number of people, it's driven by an inherited gene variant. It is not caused by anything you ate, did, or were exposed to, and it is not contagious.",
     "keyPoints": [
@@ -21,7 +32,8 @@
       "journal": "Kidney International",
       "year": 2013,
       "url": "https://www.kidney-international.org/article/S0085-2538(15)56126-7/fulltext",
-      "summary": "This is the paper that created the modern diagnosis. An international group of kidney pathologists and nephrologists agreed that dense deposit disease and C3 glomerulonephritis are two forms of the same underlying complement problem, and proposed grouping both under the term 'C3 glomerulopathy' so that diagnosis and research could be more consistent from center to center."
+      "summary": "This is the paper that created the modern diagnosis. An international group of kidney pathologists and nephrologists agreed that dense deposit disease and C3 glomerulonephritis are two forms of the same underlying complement problem, and proposed grouping both under the term 'C3 glomerulopathy' so that diagnosis and research could be more consistent from center to center.",
+      "sourceType": "peer-reviewed-journal"
     },
     {
       "title": "C3 glomerulopathy — understanding a rare complement-driven renal disease",
@@ -29,7 +41,8 @@
       "journal": "Nature Reviews Nephrology",
       "year": 2019,
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6876298/",
-      "summary": "A comprehensive review, written by many of the field's leading researchers, laying out what drives C3G at a molecular level, how it's diagnosed, and why no treatment at the time worked reliably for everyone — setting up the case for the complement-blocking drugs that later reached clinical trials."
+      "summary": "A comprehensive review, written by many of the field's leading researchers, laying out what drives C3G at a molecular level, how it's diagnosed, and why no treatment at the time worked reliably for everyone — setting up the case for the complement-blocking drugs that later reached clinical trials.",
+      "sourceType": "peer-reviewed-journal"
     },
     {
       "title": "Oral iptacopan therapy in patients with C3 glomerulopathy: a randomised, double-blind, parallel-group, multicentre, placebo-controlled, phase 3 study (APPEAR-C3G)",
@@ -37,7 +50,8 @@
       "journal": "The Lancet",
       "year": 2025,
       "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(25)01148-1/fulltext",
-      "summary": "The pivotal trial behind the first FDA-approved treatment developed specifically for C3G. Adding the oral complement inhibitor iptacopan to standard supportive care produced a rapid, meaningful reduction in urine protein levels and helped stabilize kidney function over 12 months, compared with supportive care alone."
+      "summary": "The pivotal trial behind the first FDA-approved treatment developed specifically for C3G. Adding the oral complement inhibitor iptacopan to standard supportive care produced a rapid, meaningful reduction in urine protein levels and helped stabilize kidney function over 12 months, compared with supportive care alone.",
+      "sourceType": "peer-reviewed-journal"
     }
   ],
   "lifestyle": [
@@ -86,6 +100,21 @@
       "description": "Regular labs — kidney function (eGFR, creatinine), urine protein-to-creatinine ratio, and blood complement (C3, C4) levels — track disease activity and treatment response over time. Because C3G can progress quietly, consistent monitoring is what allows a care team to catch changes early."
     }
   ],
+  "questionsToAsk": [
+    "Is my C3G being driven by an acquired cause (like a nephritic factor or autoantibody) or a genetic one — and have I been tested for both?",
+    "Based on my biopsy and labs, would I be a candidate for a complement inhibitor like iptacopan or pegcetacoplan, and what would starting one involve?",
+    "How often should I have bloodwork, urine testing, and complement (C3/C4) levels checked, and what results would count as a meaningful change?",
+    "What's my current eGFR and proteinuria trend, and what's the target we're managing toward?",
+    "Should I see a renal dietitian, and are there specific sodium, potassium, or phosphorus targets for me right now?",
+    "What symptoms should prompt me to call the office before my next scheduled visit?"
+  ],
   "lastReviewed": "2026-07-23",
+  "nextReviewDue": "2027-01-23",
+  "changelog": [
+    {
+      "date": "2026-07-23",
+      "summary": "Initial sourced content published: plain-language overview, research library, lifestyle guidance, and treatments."
+    }
+  ],
   "disclaimer": "This page provides general, plain-language educational information about C3 glomerulonephritis (C3G) and is not medical advice. Treatment options and clinical guidance for this rare disease are changing quickly; always talk with a nephrologist about how anything here applies to your own diagnosis and care."
 }

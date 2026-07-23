@@ -31,6 +31,8 @@ Adding a condition never requires a new `.astro` file — drop a new JSON file i
      "shortName": "Short form",
      "alsoKnownAs": ["Other names"],
      "summary": "One-sentence summary.",
+     "category": "rare-disease",
+     "symptoms": ["plain-language phrase someone might search for"],
      "overview": {
        "whatIsIt": "Plain-language explanation.",
        "keyPoints": ["Key point 1", "Key point 2"]
@@ -42,7 +44,8 @@ Adding a condition never requires a new `.astro` file — drop a new JSON file i
          "journal": "Journal name",
          "year": 2024,
          "url": "https://pubmed.ncbi.nlm.nih.gov/...",
-         "summary": "Plain-language summary of the finding."
+         "summary": "Plain-language summary of the finding.",
+         "sourceType": "peer-reviewed-journal"
        }
      ],
      "lifestyle": [
@@ -51,12 +54,21 @@ Adding a condition never requires a new `.astro` file — drop a new JSON file i
      "treatments": [
        { "name": "Treatment name", "category": "medication", "description": "..." }
      ],
+     "questionsToAsk": ["A question worth bringing to an appointment."],
      "lastReviewed": "YYYY-MM-DD",
+     "nextReviewDue": "YYYY-MM-DD",
+     "changelog": [
+       { "date": "YYYY-MM-DD", "summary": "What changed in this update." }
+     ],
      "disclaimer": "Standard medical disclaimer."
    }
    ```
 
-   `treatments[].category` must be one of `medication`, `procedure`, or `monitoring`.
+   - `category` must be one of `rare-disease`, `cancer`, or `chronic-autoimmune` (matches the homepage filters).
+   - `symptoms` are plain-language terms the homepage search matches against, so people who don't know the condition's name can still find it.
+   - `research[].sourceType` must be one of `peer-reviewed-journal`, `institution`, or `advocacy-org`.
+   - `treatments[].category` must be one of `medication`, `procedure`, or `monitoring`.
+   - `questionsToAsk` and `changelog` default to an empty array if omitted, but every condition should have at least a few starter questions and one changelog entry for when it was first published.
 
 3. `npm run dev` and check `http://localhost:4321/conditions/<slug>/` renders correctly.
 4. `npm run build` — this validates your JSON against the schema and will fail with a clear error if a field is missing or the wrong type.
