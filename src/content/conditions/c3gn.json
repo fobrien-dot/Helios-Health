@@ -1,71 +1,91 @@
 {
   "name": "C3 Glomerulonephritis",
-  "shortName": "C3G",
-  "alsoKnownAs": ["C3GN", "Dense Deposit Disease (a related subtype)"],
+  "shortName": "C3GN",
+  "alsoKnownAs": ["C3G", "C3 glomerulopathy (umbrella term that also includes dense deposit disease)"],
   "summary": "A rare kidney disease where part of the immune system, called the complement system, mistakenly damages the kidneys' filtering units.",
   "overview": {
-    "whatIsIt": "PLACEHOLDER TEXT — replace with sourced content. C3 Glomerulonephritis (C3G) is a rare condition in which the complement system, a part of the immune system that normally helps fight infection, becomes overactive and deposits a protein called C3 in the kidneys' filtering units (glomeruli). Over time, this can affect how well the kidneys filter waste from the blood. It is not caused by anything you did, and it is not contagious.",
+    "whatIsIt": "C3 glomerulonephritis (C3GN) is a rare kidney disease in which part of the immune system called the complement system becomes overactive and under-controlled. This drives a protein called C3 to build up inside the glomeruli — the kidneys' tiny filtering units — where it triggers ongoing inflammation and, over time, scarring. C3GN is one of two related conditions, alongside dense deposit disease (DDD), that doctors group together under the umbrella term C3 glomerulopathy (C3G) because they share the same underlying complement problem. In most people, C3G is driven by autoantibodies that overactivate the complement system; in a smaller number of people, it's driven by an inherited gene variant. It is not caused by anything you ate, did, or were exposed to, and it is not contagious.",
     "keyPoints": [
-      "PLACEHOLDER: C3G is rare and affects the kidneys' tiny filtering units.",
-      "PLACEHOLDER: It's driven by the complement system, not a typical infection or autoimmune attack.",
-      "PLACEHOLDER: Symptoms and progression vary widely from person to person.",
-      "PLACEHOLDER: Ongoing care from a nephrologist (kidney specialist) is central to managing it."
+      "C3GN and dense deposit disease (DDD) are grouped under the umbrella term 'C3 glomerulopathy (C3G)' — a classification an international group of kidney specialists agreed on in 2013 because both share the same underlying cause.",
+      "C3G is rare, with an estimated incidence as low as about 2 to 5 people per million in the United States.",
+      "It's driven by overactivation of the complement system's alternative pathway — usually by autoantibodies, sometimes by inherited gene variants — not by a typical infection or a standard autoimmune attack.",
+      "Common signs include blood or protein in the urine, swelling (edema), high blood pressure, and gradually declining kidney function; the course varies widely from person to person.",
+      "Without effective treatment, roughly half of people with C3G progress to kidney failure within about 10 years of diagnosis, which is why ongoing care from a nephrologist is central to managing it.",
+      "The first medicines developed and approved specifically for C3G — rather than adapted from other kidney diseases — only reached patients in 2025."
     ]
   },
   "research": [
     {
-      "title": "PLACEHOLDER: Sample study title on C3 glomerulopathy natural history",
-      "authors": "PLACEHOLDER: Author A, Author B, et al.",
-      "journal": "PLACEHOLDER: Journal of Nephrology",
-      "year": 2023,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/",
-      "summary": "PLACEHOLDER — replace with a plain-language summary of what this peer-reviewed study found and why it matters for patients."
+      "title": "C3 glomerulopathy: consensus report",
+      "authors": "Pickering MC, D'Agati VD, Nester CM, Smith RJH, Haas M, Appel GB, et al.",
+      "journal": "Kidney International",
+      "year": 2013,
+      "url": "https://www.kidney-international.org/article/S0085-2538(15)56126-7/fulltext",
+      "summary": "This is the paper that created the modern diagnosis. An international group of kidney pathologists and nephrologists agreed that dense deposit disease and C3 glomerulonephritis are two forms of the same underlying complement problem, and proposed grouping both under the term 'C3 glomerulopathy' so that diagnosis and research could be more consistent from center to center."
     },
     {
-      "title": "PLACEHOLDER: Sample study title on complement-targeted therapy",
-      "authors": "PLACEHOLDER: Author C, Author D, et al.",
-      "journal": "PLACEHOLDER: Kidney International",
-      "year": 2022,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/",
-      "summary": "PLACEHOLDER — replace with a plain-language summary of what this peer-reviewed study found and why it matters for patients."
+      "title": "C3 glomerulopathy — understanding a rare complement-driven renal disease",
+      "authors": "Smith RJH, Appel GB, Blom AM, Cook HT, D'Agati VD, Fakhouri F, et al.",
+      "journal": "Nature Reviews Nephrology",
+      "year": 2019,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6876298/",
+      "summary": "A comprehensive review, written by many of the field's leading researchers, laying out what drives C3G at a molecular level, how it's diagnosed, and why no treatment at the time worked reliably for everyone — setting up the case for the complement-blocking drugs that later reached clinical trials."
+    },
+    {
+      "title": "Oral iptacopan therapy in patients with C3 glomerulopathy: a randomised, double-blind, parallel-group, multicentre, placebo-controlled, phase 3 study (APPEAR-C3G)",
+      "authors": "Kavanagh D, Bomback AS, Vivarelli M, Nester CM, Remuzzi G, Zhao MH, et al.",
+      "journal": "The Lancet",
+      "year": 2025,
+      "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(25)01148-1/fulltext",
+      "summary": "The pivotal trial behind the first FDA-approved treatment developed specifically for C3G. Adding the oral complement inhibitor iptacopan to standard supportive care produced a rapid, meaningful reduction in urine protein levels and helped stabilize kidney function over 12 months, compared with supportive care alone."
     }
   ],
   "lifestyle": [
     {
-      "title": "PLACEHOLDER: Diet & nutrition",
-      "guidance": "PLACEHOLDER — replace with sourced, plain-language guidance on eating well with reduced kidney function (e.g. sodium, protein, potassium considerations), reviewed against current clinical guidelines."
+      "title": "Diet & nutrition",
+      "guidance": "There's no single meal plan for C3G, and needs shift as kidney function changes — this is worth building with a renal dietitian rather than guessing. Broad themes from NIDDK guidance on chronic kidney disease include limiting sodium (generally 2,300 mg/day or less, mostly by cutting packaged and processed foods rather than the saltshaker), watching phosphorus and potassium if blood levels run high, and getting a dietitian's input on the right amount and source of protein for your stage of kidney function. If you have Medicare and CKD, medical nutrition therapy from a registered dietitian is a covered benefit with a doctor's referral."
     },
     {
-      "title": "PLACEHOLDER: Physical activity",
-      "guidance": "PLACEHOLDER — replace with sourced guidance on safe activity levels and what to discuss with a care team before changing exercise habits."
+      "title": "Physical activity",
+      "guidance": "Kidney disease guidelines suggest working toward about 150 minutes of moderate-intensity activity a week — brisk walking, cycling, or swimming, for example — spread across most days and built up gradually rather than starting hard. Regular activity helps manage blood pressure and cardiovascular risk, which matters for C3G since protecting kidney function and heart health go hand in hand. Check with your nephrologist before increasing activity, especially around a recent biopsy or dialysis sessions."
     },
     {
-      "title": "PLACEHOLDER: Emotional wellbeing",
-      "guidance": "PLACEHOLDER — replace with sourced guidance and support resources for coping with a new diagnosis."
+      "title": "Emotional wellbeing",
+      "guidance": "It's common to feel anxious, low, or overwhelmed after a rare-disease diagnosis — the National Kidney Foundation notes that depression affects a meaningful share of people living with kidney disease. Simple habits like journaling, gentle exercise, and staying connected with others help many people, and peer-support programs (such as NKF Peers) can connect you with someone who has actually lived with a kidney condition. Bring up mood changes with your care team — support is a normal, expected part of managing a chronic diagnosis, not a sign you're handling it wrong."
     }
   ],
   "treatments": [
     {
-      "name": "PLACEHOLDER: ACE inhibitors / ARBs",
+      "name": "ACE inhibitors / ARBs",
       "category": "medication",
-      "description": "PLACEHOLDER — replace with sourced description of how this medication class is used to protect kidney function and manage blood pressure."
+      "description": "Blood pressure medications used broadly across kidney diseases to lower pressure inside the glomeruli and reduce protein leaking into the urine. They're typically a first-line, foundational part of supportive care for C3G, often started before any complement-targeted therapy is added."
     },
     {
-      "name": "PLACEHOLDER: Complement inhibitor therapy",
+      "name": "Iptacopan (Fabhalta)",
       "category": "medication",
-      "description": "PLACEHOLDER — replace with sourced description of complement-targeted treatments under investigation or in use."
+      "description": "An oral, twice-daily complement inhibitor and the first medicine ever approved specifically for C3G, cleared by the FDA in March 2025. In the pivotal APPEAR-C3G trial, adding it to supportive care produced a clinically meaningful, fast-acting reduction in proteinuria and helped stabilize kidney function over 12 months."
     },
     {
-      "name": "PLACEHOLDER: Kidney biopsy",
+      "name": "Pegcetacoplan (Empaveli)",
+      "category": "medication",
+      "description": "A complement C3 inhibitor given by injection, approved by the FDA in July 2025 for C3G and a related condition (primary immune complex membranoproliferative glomerulonephritis) in patients age 12 and up. Its phase 3 trial reported a substantial reduction in proteinuria alongside stabilized kidney function and reduced C3 deposits on repeat biopsy."
+    },
+    {
+      "name": "Kidney biopsy",
       "category": "procedure",
-      "description": "PLACEHOLDER — replace with sourced description of how a biopsy is used to diagnose and monitor C3G."
+      "description": "The main way C3G is diagnosed and distinguished from other glomerular diseases. A small kidney tissue sample is examined under a microscope and with special immunofluorescence staining to confirm that C3 protein, rather than antibodies, is the dominant deposit — the defining feature of C3G."
     },
     {
-      "name": "PLACEHOLDER: Routine bloodwork & urine monitoring",
+      "name": "Complement & genetic testing",
       "category": "monitoring",
-      "description": "PLACEHOLDER — replace with sourced description of the labs used to track kidney function and disease activity over time."
+      "description": "Specialized labs measure complement pathway activity and look for the autoantibodies (such as C3 and C5 nephritic factors) or inherited gene variants (in genes like CFH, CFI, C3, and CFB) driving the disease in a given person. This helps distinguish an acquired cause from a genetic one and can guide which therapy is likely to help."
+    },
+    {
+      "name": "Routine bloodwork & urine monitoring",
+      "category": "monitoring",
+      "description": "Regular labs — kidney function (eGFR, creatinine), urine protein-to-creatinine ratio, and blood complement (C3, C4) levels — track disease activity and treatment response over time. Because C3G can progress quietly, consistent monitoring is what allows a care team to catch changes early."
     }
   ],
   "lastReviewed": "2026-07-23",
-  "disclaimer": "This page contains placeholder sample content for early development of Helios and has not yet been reviewed against peer-reviewed sources. It is not medical advice. Do not use this page to make health decisions until real, sourced content has replaced these placeholders."
+  "disclaimer": "This page provides general, plain-language educational information about C3 glomerulonephritis (C3G) and is not medical advice. Treatment options and clinical guidance for this rare disease are changing quickly; always talk with a nephrologist about how anything here applies to your own diagnosis and care."
 }
