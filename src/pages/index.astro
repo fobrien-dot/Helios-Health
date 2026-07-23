@@ -45,15 +45,18 @@ const categoriesPresent = [...new Set(conditions.map((c) => c.data.category))];
           aria-label="Search conditions"
         />
         <div class="category-filters" role="group" aria-label="Filter by category">
-          <button type="button" class="category-filter is-active" data-category="all">All</button>
+          <button type="button" class="category-filter is-active" aria-pressed="true" data-category="all">
+            All
+          </button>
           {
             categoriesPresent.map((category) => (
-              <button type="button" class="category-filter" data-category={category}>
+              <button type="button" class="category-filter" aria-pressed="false" data-category={category}>
                 {categoryLabels[category]}
               </button>
             ))
           }
         </div>
+        <p class="condition-count" id="condition-count" aria-live="polite"></p>
       </div>
       <div class="condition-grid" id="condition-grid">
         {
@@ -95,6 +98,7 @@ const categoriesPresent = [...new Set(conditions.map((c) => c.data.category))];
   const buttons = Array.from(document.querySelectorAll<HTMLButtonElement>(".category-filter"));
   const cards = Array.from(document.querySelectorAll<HTMLAnchorElement>(".condition-card"));
   const emptyMessage = document.getElementById("condition-grid-empty");
+  const countMessage = document.getElementById("condition-count");
   let activeCategory = "all";
 
   function applyFilters() {
@@ -110,6 +114,12 @@ const categoriesPresent = [...new Set(conditions.map((c) => c.data.category))];
     });
 
     if (emptyMessage) emptyMessage.hidden = visibleCount !== 0;
+    if (countMessage) {
+      countMessage.textContent =
+        visibleCount === cards.length
+          ? `Showing all ${cards.length} condition${cards.length === 1 ? "" : "s"}`
+          : `Showing ${visibleCount} of ${cards.length} condition${cards.length === 1 ? "" : "s"}`;
+    }
   }
 
   input?.addEventListener("input", applyFilters);
@@ -117,8 +127,14 @@ const categoriesPresent = [...new Set(conditions.map((c) => c.data.category))];
   buttons.forEach((button) => {
     button.addEventListener("click", () => {
       activeCategory = button.dataset.category || "all";
-      buttons.forEach((b) => b.classList.toggle("is-active", b === button));
+      buttons.forEach((b) => {
+        const isActive = b === button;
+        b.classList.toggle("is-active", isActive);
+        b.setAttribute("aria-pressed", String(isActive));
+      });
       applyFilters();
     });
   });
+
+  applyFilters();
 </script>
