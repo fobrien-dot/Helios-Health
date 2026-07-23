@@ -1,10 +1,23 @@
 ---
+const pagePath = Astro.url.pathname.replace(import.meta.env.BASE_URL, "/");
+const editIssueUrl = `https://github.com/fobrien-dot/Helios-Health/issues/new?${new URLSearchParams(
+  {
+    title: `Suggested edit: ${pagePath}`,
+    body: `Page: ${pagePath}\n\nWhat should change, and why (include a source if you have one):\n`,
+    labels: "content",
+  }
+)}`;
 ---
 <footer class="site-footer">
   <div class="container">
     <p>
       Helios summarizes peer-reviewed research and clinical guidance in plain
       language. It is not a substitute for care from your doctor or care team.
+    </p>
+    <p>
+      <a href={editIssueUrl} target="_blank" rel="noopener noreferrer">
+        See something outdated or wrong? Suggest an edit &#8599;
+      </a>
     </p>
     <p>&copy; {new Date().getFullYear()} Helios.</p>
   </div>
