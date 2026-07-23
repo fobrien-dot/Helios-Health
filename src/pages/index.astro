@@ -1,0 +1,34 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const conditions = await getCollection("conditions");
+---
+<BaseLayout
+  title="Home"
+  description="Helios pairs plain-language overviews with peer-reviewed research, lifestyle guidance, and treatment information for people newly diagnosed with a medical condition."
+>
+  <div class="container condition-hero">
+    <h1>Understand your diagnosis, clearly.</h1>
+    <p class="condition-hero__summary">
+      Helios pairs a plain-language overview with a peer-reviewed research
+      library, lifestyle guidance, and treatment information &mdash; all
+      clearly sourced, never scraped from forums or anecdotes.
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="container">
+      <h2>Condition guides</h2>
+      {
+        conditions.map((condition) => (
+          <a class="card condition-card" href={`/conditions/${condition.id}/`}>
+            <span class="tag">{condition.data.shortName}</span>
+            <h3>{condition.data.name}</h3>
+            <p>{condition.data.summary}</p>
+          </a>
+        ))
+      }
+    </div>
+  </div>
+</BaseLayout>

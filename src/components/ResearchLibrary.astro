@@ -1,0 +1,38 @@
+---
+interface StudyEntry {
+  title: string;
+  authors: string;
+  journal: string;
+  year: number;
+  url: string;
+  summary: string;
+}
+
+interface Props {
+  studies: StudyEntry[];
+}
+
+const { studies } = Astro.props;
+---
+<section class="section" id="research" aria-labelledby="research-heading">
+  <div class="container">
+    <span class="section__icon" aria-hidden="true">🔬</span>
+    <h2 id="research-heading">Research library</h2>
+    <p>Peer-reviewed studies, summarized in plain language.</p>
+    {
+      studies.map((study) => (
+        <article class="card">
+          <p class="card__meta">
+            {study.journal} · {study.year}
+          </p>
+          <h3>{study.title}</h3>
+          <p class="card__meta">{study.authors}</p>
+          <p>{study.summary}</p>
+          <a class="card__link" href={study.url} target="_blank" rel="noopener noreferrer">
+            Read the study &rarr;
+          </a>
+        </article>
+      ))
+    }
+  </div>
+</section>

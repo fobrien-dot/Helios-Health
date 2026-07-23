@@ -1,0 +1,27 @@
+---
+interface LifestyleEntry {
+  title: string;
+  guidance: string;
+}
+
+interface Props {
+  entries: LifestyleEntry[];
+}
+
+const { entries } = Astro.props;
+---
+<section class="section" id="lifestyle" aria-labelledby="lifestyle-heading">
+  <div class="container">
+    <span class="section__icon" aria-hidden="true">🌱</span>
+    <h2 id="lifestyle-heading">Lifestyle guidance</h2>
+    <p>Everyday habits and self-care to discuss with your care team.</p>
+    {
+      entries.map((entry) => (
+        <article class="card">
+          <h3>{entry.title}</h3>
+          <p>{entry.guidance}</p>
+        </article>
+      ))
+    }
+  </div>
+</section>

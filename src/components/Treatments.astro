@@ -1,0 +1,35 @@
+---
+interface TreatmentEntry {
+  name: string;
+  category: "medication" | "procedure" | "monitoring";
+  description: string;
+}
+
+interface Props {
+  treatments: TreatmentEntry[];
+}
+
+const { treatments } = Astro.props;
+
+const categoryLabels: Record<TreatmentEntry["category"], string> = {
+  medication: "Medication",
+  procedure: "Procedure",
+  monitoring: "Monitoring",
+};
+---
+<section class="section" id="treatments" aria-labelledby="treatments-heading">
+  <div class="container">
+    <span class="section__icon" aria-hidden="true">💊</span>
+    <h2 id="treatments-heading">Treatments &amp; medications</h2>
+    <p>Common approaches used to manage this condition, as background for conversations with your doctor.</p>
+    {
+      treatments.map((treatment) => (
+        <article class="card">
+          <span class="tag">{categoryLabels[treatment.category]}</span>
+          <h3>{treatment.name}</h3>
+          <p>{treatment.description}</p>
+        </article>
+      ))
+    }
+  </div>
+</section>

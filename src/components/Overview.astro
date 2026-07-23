@@ -1,0 +1,18 @@
+---
+interface Props {
+  whatIsIt: string;
+  keyPoints: string[];
+}
+
+const { whatIsIt, keyPoints } = Astro.props;
+---
+<section class="section" id="overview" aria-labelledby="overview-heading">
+  <div class="container">
+    <span class="section__icon" aria-hidden="true">📖</span>
+    <h2 id="overview-heading">Plain-language overview</h2>
+    <p>{whatIsIt}</p>
+    <ul class="key-points">
+      {keyPoints.map((point) => <li>{point}</li>)}
+    </ul>
+  </div>
+</section>

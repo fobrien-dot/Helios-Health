@@ -1,0 +1,70 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import Overview from "../components/Overview.astro";
+import ResearchLibrary from "../components/ResearchLibrary.astro";
+import Lifestyle from "../components/Lifestyle.astro";
+import Treatments from "../components/Treatments.astro";
+
+interface ResearchStudy {
+  title: string;
+  authors: string;
+  journal: string;
+  year: number;
+  url: string;
+  summary: string;
+}
+
+interface LifestyleEntry {
+  title: string;
+  guidance: string;
+}
+
+interface TreatmentEntry {
+  name: string;
+  category: "medication" | "procedure" | "monitoring";
+  description: string;
+}
+
+interface Props {
+  name: string;
+  shortName: string;
+  alsoKnownAs: string[];
+  summary: string;
+  overview: { whatIsIt: string; keyPoints: string[] };
+  research: ResearchStudy[];
+  lifestyle: LifestyleEntry[];
+  treatments: TreatmentEntry[];
+  lastReviewed: string;
+  disclaimer: string;
+}
+
+const {
+  name,
+  shortName,
+  alsoKnownAs,
+  summary,
+  overview,
+  research,
+  lifestyle,
+  treatments,
+  lastReviewed,
+  disclaimer,
+} = Astro.props;
+---
+<BaseLayout title={name} description={summary}>
+  <div class="condition-hero container">
+    <p class="condition-hero__eyebrow">Condition guide · {shortName}</p>
+    <h1>{name}</h1>
+    {alsoKnownAs.length > 0 && (
+      <p class="condition-hero__aka">Also known as: {alsoKnownAs.join(", ")}</p>
+    )}
+    <p class="condition-hero__summary">{summary}</p>
+    <p class="last-reviewed">Last reviewed {lastReviewed}</p>
+    <div class="notice" role="note">{disclaimer}</div>
+  </div>
+
+  <Overview whatIsIt={overview.whatIsIt} keyPoints={overview.keyPoints} />
+  <ResearchLibrary studies={research} />
+  <Lifestyle entries={lifestyle} />
+  <Treatments treatments={treatments} />
+</BaseLayout>
