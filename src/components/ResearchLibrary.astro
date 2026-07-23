@@ -16,13 +16,14 @@ const { studies } = Astro.props;
 ---
 <section class="section" id="research" aria-labelledby="research-heading">
   <div class="container">
-    <span class="section__icon" aria-hidden="true">🔬</span>
+    <p class="section__eyebrow"><span class="section__eyebrow-index">02</span> · Research library</p>
+    <span class="section__icon section__icon--research" aria-hidden="true">🔬</span>
     <h2 id="research-heading">Research library</h2>
     <p>Peer-reviewed studies, summarized in plain language.</p>
     {
       studies.map((study) => (
         <article class="card">
-          <p class="card__meta">
+          <p class="study-badge">
             {study.journal} · {study.year}
           </p>
           <h3>{study.title}</h3>

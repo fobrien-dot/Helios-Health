@@ -8,7 +8,8 @@ const { whatIsIt, keyPoints } = Astro.props;
 ---
 <section class="section" id="overview" aria-labelledby="overview-heading">
   <div class="container">
-    <span class="section__icon" aria-hidden="true">📖</span>
+    <p class="section__eyebrow"><span class="section__eyebrow-index">01</span> · Overview</p>
+    <span class="section__icon section__icon--overview" aria-hidden="true">📖</span>
     <h2 id="overview-heading">Plain-language overview</h2>
     <p>{whatIsIt}</p>
     <ul class="key-points">

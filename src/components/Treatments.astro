@@ -16,16 +16,23 @@ const categoryLabels: Record<TreatmentEntry["category"], string> = {
   procedure: "Procedure",
   monitoring: "Monitoring",
 };
+
+const categoryTagClass: Record<TreatmentEntry["category"], string> = {
+  medication: "tag",
+  procedure: "tag tag--procedure",
+  monitoring: "tag tag--monitoring",
+};
 ---
 <section class="section" id="treatments" aria-labelledby="treatments-heading">
   <div class="container">
-    <span class="section__icon" aria-hidden="true">💊</span>
+    <p class="section__eyebrow"><span class="section__eyebrow-index">04</span> · Treatments &amp; medications</p>
+    <span class="section__icon section__icon--treatments" aria-hidden="true">💊</span>
     <h2 id="treatments-heading">Treatments &amp; medications</h2>
     <p>Common approaches used to manage this condition, as background for conversations with your doctor.</p>
     {
       treatments.map((treatment) => (
         <article class="card">
-          <span class="tag">{categoryLabels[treatment.category]}</span>
+          <span class={categoryTagClass[treatment.category]}>{categoryLabels[treatment.category]}</span>
           <h3>{treatment.name}</h3>
           <p>{treatment.description}</p>
         </article>
