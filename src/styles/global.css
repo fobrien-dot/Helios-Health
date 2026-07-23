@@ -184,6 +184,10 @@ li {
   flex-shrink: 0;
 }
 
+.site-header__mark-face line {
+  stroke: var(--color-bg);
+}
+
 .site-header__name {
   font-family: var(--font-display);
   font-weight: 600;
