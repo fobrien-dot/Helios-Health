@@ -1,13 +1,19 @@
 ---
 ---
 <header class="site-header">
-  <div class="container">
-    <a class="site-header__brand" href={import.meta.env.BASE_URL}>
-      <span class="site-header__mark" aria-hidden="true">☀</span>
-      <span class="site-header__name">Helios</span>
-    </a>
-    <p class="site-header__tagline">
-      Clear, sourced information for people newly diagnosed with a medical condition.
-    </p>
+  <div class="container site-header__row">
+    <div>
+      <a class="site-header__brand" href={import.meta.env.BASE_URL}>
+        <span class="site-header__mark" aria-hidden="true">☀</span>
+        <span class="site-header__name">Helios</span>
+      </a>
+      <p class="site-header__tagline">
+        Clear, sourced information for people newly diagnosed with a medical condition.
+      </p>
+    </div>
+    <nav class="site-header__nav" aria-label="Primary">
+      <a href={`${import.meta.env.BASE_URL}sourcing/`}>How we source</a>
+      <a href={`${import.meta.env.BASE_URL}about/`}>About</a>
+    </nav>
   </div>
 </header>

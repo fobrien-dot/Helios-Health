@@ -136,11 +136,37 @@ li {
   border-bottom: 1px solid var(--color-border-soft);
 }
 
+.site-header__row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
 .site-header__brand {
   display: flex;
   align-items: baseline;
   gap: var(--space-2);
   text-decoration: none;
+}
+
+.site-header__nav {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding-top: 0.35rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.site-header__nav a {
+  color: var(--color-text-muted);
+  text-decoration: none;
+}
+
+.site-header__nav a:hover {
+  color: var(--color-primary);
 }
 
 .site-header__mark {
@@ -391,4 +417,271 @@ li {
 .last-reviewed {
   color: var(--color-text-muted);
   font-size: 0.85rem;
+}
+
+/* Category tags (rare disease / cancer / chronic & autoimmune) */
+
+.category-tag {
+  margin-left: var(--space-1);
+}
+
+.tag--rare-disease {
+  background: var(--color-accent-soft);
+  color: #3a4f3d;
+}
+
+.tag--cancer {
+  background: var(--color-warm-soft);
+  color: var(--color-warm-text);
+}
+
+.tag--chronic-autoimmune {
+  background: var(--color-info-soft);
+  color: var(--color-info-text);
+}
+
+/* Source-type badge on research cards */
+
+.source-type-badge {
+  display: inline-block;
+  margin-left: var(--space-1);
+  color: var(--color-text-muted);
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+/* Questions-to-ask list */
+
+.questions-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: var(--space-3);
+}
+
+.questions-list li {
+  position: relative;
+  padding-left: 1.75rem;
+  margin-bottom: var(--space-2);
+}
+
+.questions-list li::before {
+  content: "?";
+  position: absolute;
+  left: 0;
+  top: -0.05rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  background: var(--color-primary-soft);
+  color: var(--color-primary-dark);
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1.25rem;
+  text-align: center;
+}
+
+/* Content history / changelog disclosure */
+
+.changelog {
+  margin: var(--space-2) 0;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.changelog summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.changelog ul {
+  margin-top: var(--space-1);
+  padding-left: 1.25rem;
+}
+
+/* Print button */
+
+.print-button {
+  display: inline-block;
+  margin-top: var(--space-2);
+  padding: 0.5rem 1rem;
+  background: var(--color-surface);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-family: var(--font-body);
+  cursor: pointer;
+}
+
+.print-button:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+/* Homepage search + category filters */
+
+.condition-search {
+  margin: var(--space-3) 0;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-sizing: border-box;
+}
+
+.search-input:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 1px;
+}
+
+.category-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+  margin-top: var(--space-2);
+}
+
+.category-filter {
+  padding: 0.35rem 0.9rem;
+  background: var(--color-surface);
+  color: var(--color-text-muted);
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  font-family: var(--font-body);
+  cursor: pointer;
+}
+
+.category-filter:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.category-filter.is-active {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #fff;
+}
+
+.condition-grid-empty {
+  color: var(--color-text-muted);
+  padding: var(--space-3) 0;
+}
+
+/* About page */
+
+.pillar-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: var(--space-3);
+  margin-top: var(--space-3);
+}
+
+.pillar-grid .card {
+  margin-bottom: 0;
+}
+
+.boundaries-list {
+  list-style: none;
+  padding-left: 0;
+  margin: var(--space-3) 0;
+}
+
+.boundaries-list li {
+  position: relative;
+  padding-left: 1.75rem;
+  margin-bottom: var(--space-2);
+  color: var(--color-text-muted);
+}
+
+.boundaries-list li::before {
+  content: "–";
+  position: absolute;
+  left: 0;
+  color: var(--color-warm);
+  font-weight: 700;
+}
+
+/* Sourcing page */
+
+.sourcing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--space-3);
+  margin: var(--space-3) 0;
+}
+
+.sourcing-grid .card {
+  margin-bottom: 0;
+}
+
+.sourcing-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: var(--space-2);
+}
+
+.sourcing-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: var(--space-2);
+}
+
+.sourcing-list--included li::before {
+  content: "+";
+  position: absolute;
+  left: 0;
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.sourcing-list--excluded li::before {
+  content: "–";
+  position: absolute;
+  left: 0;
+  color: var(--color-warm);
+  font-weight: 700;
+}
+
+/* Print styles — the "bring to your appointment" view */
+
+@media print {
+  .site-header,
+  .site-footer,
+  .notice,
+  .no-print,
+  .condition-search,
+  .condition-card__cta {
+    display: none !important;
+  }
+
+  .hero-band {
+    background: none;
+  }
+
+  .section {
+    padding: var(--space-2) 0;
+    border-top: none;
+    page-break-inside: avoid;
+  }
+
+  .card {
+    box-shadow: none;
+    border: 1px solid #ccc;
+    page-break-inside: avoid;
+  }
+
+  body {
+    background: #fff;
+  }
 }

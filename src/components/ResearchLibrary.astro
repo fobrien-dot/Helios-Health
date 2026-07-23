@@ -6,6 +6,7 @@ interface StudyEntry {
   year: number;
   url: string;
   summary: string;
+  sourceType: "peer-reviewed-journal" | "institution" | "advocacy-org";
 }
 
 interface Props {
@@ -13,6 +14,12 @@ interface Props {
 }
 
 const { studies } = Astro.props;
+
+const sourceTypeLabels: Record<StudyEntry["sourceType"], string> = {
+  "peer-reviewed-journal": "Peer-reviewed journal",
+  institution: "Recognized institution",
+  "advocacy-org": "Patient-advocacy org",
+};
 ---
 <section class="section" id="research" aria-labelledby="research-heading">
   <div class="container">
@@ -26,6 +33,7 @@ const { studies } = Astro.props;
           <p class="study-badge">
             {study.journal} · {study.year}
           </p>
+          <span class="source-type-badge">{sourceTypeLabels[study.sourceType]}</span>
           <h3>{study.title}</h3>
           <p class="card__meta">{study.authors}</p>
           <p>{study.summary}</p>
