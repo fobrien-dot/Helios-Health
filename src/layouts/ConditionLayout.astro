@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
+import SectionNav from "../components/SectionNav.astro";
 import Overview from "../components/Overview.astro";
 import ResearchLibrary from "../components/ResearchLibrary.astro";
 import Lifestyle from "../components/Lifestyle.astro";
@@ -71,20 +72,28 @@ const categoryLabels: Record<Props["category"], string> = {
   cancer: "Cancer",
   "chronic-autoimmune": "Chronic & autoimmune",
 };
+
+const sections = [
+  { id: "overview", label: "What this is" },
+  { id: "research", label: "Research library" },
+  { id: "lifestyle", label: "Living with it" },
+  { id: "treatments", label: "Treatments" },
+  ...(questionsToAsk.length > 0 ? [{ id: "questions", label: "Questions to ask" }] : []),
+];
 ---
 <BaseLayout title={name} description={summary}>
-  <div class="hero-band">
-    <div class="condition-hero container">
-      <p class="condition-hero__eyebrow">Condition guide · {shortName}</p>
-      <span class="tag category-tag">{categoryLabels[category]}</span>
+  <div class="container">
+    <div class="condition-hero">
+      <div class="condition-hero__tags">
+        <span class="tag tag-accent">{shortName}</span>
+        <span class={`tag tag--${category}`}>{categoryLabels[category]}</span>
+      </div>
       <h1>{name}</h1>
       {alsoKnownAs.length > 0 && (
-        <p class="condition-hero__aka">Also known as: {alsoKnownAs.join(", ")}</p>
+        <p class="condition-hero__aka">Also known as {alsoKnownAs.join(" · ")}</p>
       )}
       <p class="condition-hero__summary">{summary}</p>
-      <p class="last-reviewed">
-        Last reviewed {lastReviewed} · Next review due {nextReviewDue}
-      </p>
+      <div class="notice" role="note">{disclaimer}</div>
       {changelog.length > 0 && (
         <details class="changelog">
           <summary>Content history</summary>
@@ -95,16 +104,17 @@ const categoryLabels: Record<Props["category"], string> = {
           </ul>
         </details>
       )}
-      <div class="notice" role="note">{disclaimer}</div>
-      <button type="button" class="print-button no-print" onclick="window.print()">
-        Print this page &#128424;
-      </button>
+    </div>
+
+    <div class="condition-layout">
+      <SectionNav sections={sections} lastReviewed={lastReviewed} nextReviewDue={nextReviewDue} />
+      <div>
+        <Overview whatIsIt={overview.whatIsIt} keyPoints={overview.keyPoints} />
+        <ResearchLibrary studies={research} />
+        <Lifestyle entries={lifestyle} />
+        <Treatments treatments={treatments} />
+        <QuestionsToAsk questions={questionsToAsk} conditionName={shortName} />
+      </div>
     </div>
   </div>
-
-  <Overview whatIsIt={overview.whatIsIt} keyPoints={overview.keyPoints} />
-  <ResearchLibrary studies={research} />
-  <Lifestyle entries={lifestyle} />
-  <Treatments treatments={treatments} />
-  <QuestionsToAsk questions={questionsToAsk} />
 </BaseLayout>

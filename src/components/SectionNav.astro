@@ -1,0 +1,59 @@
+---
+interface Section {
+  id: string;
+  label: string;
+}
+
+interface Props {
+  sections: Section[];
+  lastReviewed: string;
+  nextReviewDue: string;
+}
+
+const { sections, lastReviewed, nextReviewDue } = Astro.props;
+---
+<nav class="section-nav no-print" aria-label="Sections of this guide">
+  <p class="section-nav__label">On this page</p>
+  <ul class="section-nav__list">
+    {sections.map((section) => (
+      <li>
+        <a class="section-nav__link" href={`#${section.id}`} data-section-link={section.id}>
+          {section.label}
+        </a>
+      </li>
+    ))}
+  </ul>
+  <button type="button" class="btn btn-secondary btn-block btn-sm" style="margin-top: var(--space-4)" onclick="window.print()">
+    Print appointment sheet
+  </button>
+  <p class="section-nav__meta">
+    Reviewed {lastReviewed} · next review due {nextReviewDue}
+  </p>
+</nav>
+
+<script>
+  // Scroll-spy: highlight whichever section is currently in the reading zone.
+  const links = Array.from(document.querySelectorAll<HTMLAnchorElement>("[data-section-link]"));
+  const sections = links
+    .map((link) => document.getElementById(link.dataset.sectionLink || ""))
+    .filter((el): el is HTMLElement => el !== null);
+
+  function setCurrent(id: string) {
+    links.forEach((link) => link.classList.toggle("is-current", link.dataset.sectionLink === id));
+  }
+
+  if (sections.length > 0) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visible = entries
+          .filter((entry) => entry.isIntersecting)
+          .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)[0];
+        if (visible) setCurrent(visible.target.id);
+      },
+      { rootMargin: "-96px 0px -60% 0px", threshold: 0 }
+    );
+
+    sections.forEach((section) => observer.observe(section));
+    setCurrent(sections[0].id);
+  }
+</script>

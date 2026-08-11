@@ -20,28 +20,28 @@ const sourceTypeLabels: Record<StudyEntry["sourceType"], string> = {
   institution: "Recognized institution",
   "advocacy-org": "Patient-advocacy org",
 };
+
+const ordered = [...studies].sort((a, b) => a.year - b.year);
 ---
 <section class="section" id="research" aria-labelledby="research-heading">
-  <div class="container">
-    <p class="section__eyebrow"><span class="section__eyebrow-index">02</span> · Research library</p>
-    <span class="section__icon section__icon--research" aria-hidden="true">🔬</span>
-    <h2 id="research-heading">Research library</h2>
-    <p>Peer-reviewed studies, summarized in plain language.</p>
-    {
-      studies.map((study) => (
-        <article class="card">
-          <p class="study-badge">
-            {study.journal} · {study.year}
-          </p>
-          <span class="source-type-badge">{sourceTypeLabels[study.sourceType]}</span>
-          <h3>{study.title}</h3>
-          <p class="card__meta">{study.authors}</p>
-          <p>{study.summary}</p>
-          <a class="card__link" href={study.url} target="_blank" rel="noopener noreferrer">
-            Read the study &rarr;
-          </a>
-        </article>
-      ))
-    }
-  </div>
+  <p class="eyebrow">The evidence</p>
+  <h2 id="research-heading">Research library</h2>
+  <p class="section__intro">
+    Every study named, dated, and linked — summarized in plain language, in the order the
+    field learned it.
+  </p>
+  {ordered.map((study) => (
+    <article class="study">
+      <div class="study__year" aria-hidden="true">{study.year}</div>
+      <div>
+        <h3>{study.title}</h3>
+        <p class="card-meta">{study.journal} · {study.authors}</p>
+        <p style="margin-top: var(--space-2)">{study.summary}</p>
+        <span class="tag tag-outline">{sourceTypeLabels[study.sourceType]}</span>
+        <a class="study__link" href={study.url} target="_blank" rel="noopener noreferrer">
+          Read the study &#8599;
+        </a>
+      </div>
+    </article>
+  ))}
 </section>

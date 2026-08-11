@@ -1,5 +1,6 @@
 ---
-const pagePath = Astro.url.pathname.replace(import.meta.env.BASE_URL, "/");
+const base = import.meta.env.BASE_URL;
+const pagePath = Astro.url.pathname.replace(base, "/");
 const editIssueUrl = `https://github.com/fobrien-dot/Helios-Health/issues/new?${new URLSearchParams(
   {
     title: `Suggested edit: ${pagePath}`,
@@ -10,15 +11,19 @@ const editIssueUrl = `https://github.com/fobrien-dot/Helios-Health/issues/new?${
 ---
 <footer class="site-footer">
   <div class="container">
-    <p>
-      Helios summarizes peer-reviewed research and clinical guidance in plain
-      language. It is not a substitute for care from your doctor or care team.
-    </p>
-    <p>
-      <a href={editIssueUrl} target="_blank" rel="noopener noreferrer">
-        See something outdated or wrong? Suggest an edit &#8599;
-      </a>
-    </p>
-    <p>&copy; {new Date().getFullYear()} Helios.</p>
+    <div class="site-footer__grid">
+      <p class="site-footer__note">
+        Helios summarizes peer-reviewed research and clinical guidance in plain language.
+        It is a companion to care — not a substitute for your doctor or care team.
+      </p>
+      <div class="site-footer__links">
+        <a href={`${base}sourcing/`}>How we source information</a>
+        <a href={`${base}about/`}>About Helios</a>
+        <a href={editIssueUrl} target="_blank" rel="noopener noreferrer">
+          See something outdated? Suggest an edit &#8599;
+        </a>
+      </div>
+    </div>
+    <p class="site-footer__legal">&copy; {new Date().getFullYear()} Helios.</p>
   </div>
 </footer>

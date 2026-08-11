@@ -21,38 +21,40 @@ const excluded = [
   title="How we source information"
   description="Helios only draws on peer-reviewed research, recognized institutions, and vetted advocacy organizations — never forums, influencers, or unproven claims."
 >
-  <div class="hero-band">
-    <div class="condition-hero container">
-      <p class="condition-hero__eyebrow">Methodology</p>
-      <h1>Sourced, not scraped.</h1>
-      <p class="condition-hero__summary">
-        Every claim on Helios is traceable back to its original source. Here's exactly
-        what that standard includes — and what it rules out.
+  <div class="container">
+    <section class="hero">
+      <p class="eyebrow">Methodology</p>
+      <h1 class="hero__title">Sourced, not scraped.</h1>
+      <p class="hero__lede">
+        Every claim on Helios is traceable back to its original source. Here's exactly what
+        that standard includes — and what it rules out.
       </p>
-    </div>
-  </div>
+    </section>
 
-  <section class="section" id="sourcing" aria-labelledby="sourcing-heading">
-    <div class="container">
-      <div class="sourcing-grid">
-        <article class="card sourcing-card sourcing-card--included">
-          <h3>Included</h3>
-          <ul class="sourcing-list sourcing-list--included">
-            {included.map((item) => <li>{item}</li>)}
-          </ul>
-        </article>
-        <article class="card sourcing-card sourcing-card--excluded">
-          <h3>Excluded</h3>
-          <ul class="sourcing-list sourcing-list--excluded">
-            {excluded.map((item) => <li>{item}</li>)}
-          </ul>
-        </article>
-      </div>
-      <p>
-        Every condition page also lists a "last reviewed" and "next review due" date,
-        plus a short content history, so you can see when it was last checked against
-        current research.
-      </p>
+    <div class="sourcing-grid">
+      <article class="card">
+        <p class="card-kicker">What goes in</p>
+        <h2 style="font-size: 1.6rem">Included</h2>
+        <ul class="marked-list">
+          {included.map((item) => <li>{item}</li>)}
+        </ul>
+      </article>
+      <article class="card">
+        <p class="card-kicker">What stays out</p>
+        <h2 style="font-size: 1.6rem">Excluded</h2>
+        <ul class="marked-list marked-list--excluded">
+          {excluded.map((item) => <li>{item}</li>)}
+        </ul>
+      </article>
     </div>
-  </section>
+
+    <section class="band" style="margin-top: var(--space-7)">
+      <h2 class="band__title">Every guide tells you how fresh it is.</h2>
+      <p class="band__body">
+        Each condition page lists a "last reviewed" and "next review due" date, plus a short
+        content history — so you can see when it was last checked against current research
+        before you rely on it.
+      </p>
+    </section>
+  </div>
 </BaseLayout>
