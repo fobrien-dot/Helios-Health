@@ -1,6 +1,8 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 
+const base = import.meta.env.BASE_URL;
+
 const pillars = [
   {
     title: "Global & free",
@@ -27,36 +29,29 @@ const boundaries = [
   title="About"
   description="Helios is a single, trustworthy starting point for anyone who has just been told they have a medical condition — and a companion to care, not a replacement for it."
 >
-  <div class="hero-band">
-    <div class="condition-hero container">
-      <p class="condition-hero__eyebrow">About Helios</p>
-      <h1>A single, trustworthy starting point.</h1>
-      <p class="condition-hero__summary">
-        For anyone who has just been told they have a medical condition — pointing
-        toward validated science, not noise.
+  <div class="container">
+    <section class="hero">
+      <p class="eyebrow">About Helios</p>
+      <h1 class="hero__title">A single, trustworthy starting point.</h1>
+      <p class="hero__lede">
+        For anyone who has just been told they have a medical condition — pointing toward
+        validated science, not noise.
       </p>
-    </div>
-  </div>
+    </section>
 
-  <section class="section" id="name" aria-labelledby="name-heading">
-    <div class="container">
-      <p class="section__eyebrow">The name</p>
-      <span class="section__icon section__icon--research" aria-hidden="true">☀️</span>
-      <h2 id="name-heading">Why "Helios"?</h2>
-      <p>
-        In Greek mythology, Helios was the Titan who drove the sun's chariot across the
-        sky each day, bringing light after darkness. A new diagnosis can feel a lot like
-        being left in the dark — overwhelming, disorienting, short on real answers. This
-        platform borrows his name for the same reason he was worth naming after: not to
-        dazzle, but to light the way — clear enough to see by, never blinding.
+    <section class="band band--accent">
+      <h2 class="band__title">Why "Helios"?</h2>
+      <p class="band__body">
+        In Greek mythology, Helios was the Titan who drove the sun's chariot across the sky
+        each day, bringing light after darkness. A new diagnosis can feel a lot like being
+        left in the dark — overwhelming, disorienting, short on real answers. This platform
+        borrows his name for the same reason he was worth naming after: not to dazzle, but to
+        light the way — clear enough to see by, never blinding.
       </p>
-    </div>
-  </section>
+    </section>
 
-  <section class="section" id="vision" aria-labelledby="vision-heading">
-    <div class="container">
-      <p class="section__eyebrow">The vision</p>
-      <span class="section__icon section__icon--overview" aria-hidden="true">🎯</span>
+    <section class="section" id="vision" aria-labelledby="vision-heading">
+      <p class="eyebrow">The vision</p>
       <h2 id="vision-heading">What Helios is for</h2>
       <div class="pillar-grid">
         {pillars.map((pillar) => (
@@ -66,22 +61,22 @@ const boundaries = [
           </article>
         ))}
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section" id="boundaries" aria-labelledby="boundaries-heading">
-    <div class="container">
-      <p class="section__eyebrow">What this platform is not</p>
-      <span class="section__icon section__icon--treatments" aria-hidden="true">🚫</span>
+    <section class="section" id="boundaries" aria-labelledby="boundaries-heading">
+      <p class="eyebrow">What this platform is not</p>
       <h2 id="boundaries-heading">A companion to care, not a substitute</h2>
-      <p>Helios is meant to be brought to appointments, not to replace them — a way to ask better questions and understand the answers, grounded in validated science. It is not:</p>
-      <ul class="boundaries-list">
+      <p class="prose">
+        Helios is meant to be brought to appointments, not to replace them — a way to ask
+        better questions and understand the answers, grounded in validated science. It is not:
+      </p>
+      <ul class="marked-list marked-list--excluded prose">
         {boundaries.map((item) => <li>{item}</li>)}
       </ul>
-      <p>
+      <p class="prose">
         Curious how we decide what counts as a trustworthy source? Read our
-        <a href={`${import.meta.env.BASE_URL}sourcing/`}>sourcing standards</a>.
+        <a href={`${base}sourcing/`}>sourcing standards</a>.
       </p>
-    </div>
-  </section>
+    </section>
+  </div>
 </BaseLayout>

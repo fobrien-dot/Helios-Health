@@ -16,27 +16,66 @@ const categoryLabels: Record<TreatmentEntry["category"], string> = {
   procedure: "Procedure",
   monitoring: "Monitoring",
 };
-
-const categoryTagClass: Record<TreatmentEntry["category"], string> = {
-  medication: "tag",
-  procedure: "tag tag--procedure",
-  monitoring: "tag tag--monitoring",
-};
 ---
 <section class="section" id="treatments" aria-labelledby="treatments-heading">
-  <div class="container">
-    <p class="section__eyebrow"><span class="section__eyebrow-index">04</span> · Treatments &amp; medications</p>
-    <span class="section__icon section__icon--treatments" aria-hidden="true">💊</span>
-    <h2 id="treatments-heading">Treatments &amp; medications</h2>
-    <p>Common approaches used to manage this condition, as background for conversations with your doctor.</p>
-    {
-      treatments.map((treatment) => (
-        <article class="card">
-          <span class={categoryTagClass[treatment.category]}>{categoryLabels[treatment.category]}</span>
-          <h3>{treatment.name}</h3>
-          <p>{treatment.description}</p>
-        </article>
-      ))
-    }
+  <div class="section__head">
+    <div>
+      <p class="eyebrow">Options</p>
+      <h2 id="treatments-heading">Treatments &amp; monitoring</h2>
+    </div>
+    <div class="seg no-print" role="group" aria-label="Treatment view">
+      <button type="button" class="seg-opt" data-view="cards" aria-pressed="true">Cards</button>
+      <button type="button" class="seg-opt" data-view="compare" aria-pressed="false">Compare</button>
+    </div>
   </div>
+  <p class="section__intro">
+    Common approaches used to manage this condition — background for a conversation with
+    your doctor, not a recommendation.
+  </p>
+
+  <div class="treatment-grid" data-treatment-view="cards">
+    {treatments.map((treatment) => (
+      <article class="card">
+        <span class={`tag tag--${treatment.category}`}>{categoryLabels[treatment.category]}</span>
+        <h3 style="margin-top: var(--space-3)">{treatment.name}</h3>
+        <p>{treatment.description}</p>
+      </article>
+    ))}
+  </div>
+
+  <table class="table" data-treatment-view="compare" hidden>
+    <thead>
+      <tr>
+        <th scope="col" style="width: 24%">Treatment</th>
+        <th scope="col" style="width: 16%">Type</th>
+        <th scope="col">What it does</th>
+      </tr>
+    </thead>
+    <tbody>
+      {treatments.map((treatment) => (
+        <tr>
+          <th scope="row" style="text-align: left; padding: var(--space-4) var(--space-4) var(--space-4) 0; border-bottom: 1px solid var(--color-divider); font-size: 1rem; letter-spacing: 0; text-transform: none; color: var(--color-text)">
+            {treatment.name}
+          </th>
+          <td><span class={`tag tag--${treatment.category}`}>{categoryLabels[treatment.category]}</span></td>
+          <td>{treatment.description}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
 </section>
+
+<script>
+  const options = Array.from(document.querySelectorAll<HTMLButtonElement>(".seg-opt[data-view]"));
+  const views = Array.from(document.querySelectorAll<HTMLElement>("[data-treatment-view]"));
+
+  options.forEach((option) => {
+    option.addEventListener("click", () => {
+      const chosen = option.dataset.view;
+      options.forEach((o) => o.setAttribute("aria-pressed", String(o === option)));
+      views.forEach((view) => {
+        view.hidden = view.dataset.treatmentView !== chosen;
+      });
+    });
+  });
+</script>

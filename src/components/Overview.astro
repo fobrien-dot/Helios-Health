@@ -7,13 +7,15 @@ interface Props {
 const { whatIsIt, keyPoints } = Astro.props;
 ---
 <section class="section" id="overview" aria-labelledby="overview-heading">
-  <div class="container">
-    <p class="section__eyebrow"><span class="section__eyebrow-index">01</span> · Overview</p>
-    <span class="section__icon section__icon--overview" aria-hidden="true">📖</span>
-    <h2 id="overview-heading">Plain-language overview</h2>
-    <p>{whatIsIt}</p>
-    <ul class="key-points">
-      {keyPoints.map((point) => <li>{point}</li>)}
-    </ul>
+  <p class="eyebrow">Start here</p>
+  <h2 id="overview-heading">What this actually is</h2>
+  <p class="prose" style="font-size: 1.1rem">{whatIsIt}</p>
+  <div class="keypoint-grid">
+    {keyPoints.map((point, index) => (
+      <div class="keypoint">
+        <span class="keypoint__num" aria-hidden="true">{index + 1}</span>
+        <p>{point}</p>
+      </div>
+    ))}
   </div>
 </section>
