@@ -31,7 +31,7 @@
       "authors": "Pickering MC, D'Agati VD, Nester CM, Smith RJH, Haas M, Appel GB, et al.",
       "journal": "Kidney International",
       "year": 2013,
-      "url": "https://www.kidney-international.org/article/S0085-2538(15)56126-7/fulltext",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3842953/",
       "summary": "This is the paper that created the modern diagnosis. An international group of kidney pathologists and nephrologists agreed that dense deposit disease and C3 glomerulonephritis are two forms of the same underlying complement problem, and proposed grouping both under the term 'C3 glomerulopathy' so that diagnosis and research could be more consistent from center to center.",
       "sourceType": "peer-reviewed-journal"
     },
@@ -51,6 +51,15 @@
       "year": 2025,
       "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(25)01148-1/fulltext",
       "summary": "The pivotal trial behind the first FDA-approved treatment developed specifically for C3G. Adding the oral complement inhibitor iptacopan to standard supportive care produced a rapid, meaningful reduction in urine protein levels and helped stabilize kidney function over 12 months, compared with supportive care alone.",
+      "sourceType": "peer-reviewed-journal"
+    },
+    {
+      "title": "Trial of Pegcetacoplan in C3 Glomerulopathy and Immune-Complex MPGN (VALIANT)",
+      "authors": "Fakhouri F, Bomback AS, Ariceta G, Delmas Y, Dixon BP, Gale DP, Greenbaum LA, et al.",
+      "journal": "New England Journal of Medicine",
+      "year": 2025,
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2501510",
+      "summary": "The pivotal trial behind pegcetacoplan, the second complement inhibitor approved specifically for C3G (and for the related condition primary immune-complex MPGN). Reported a substantial, sustained reduction in proteinuria and stabilized kidney function, plus reduced C3 deposits visible on repeat kidney biopsy.",
       "sourceType": "peer-reviewed-journal"
     }
   ],
@@ -82,7 +91,7 @@
     {
       "name": "Pegcetacoplan (Empaveli)",
       "category": "medication",
-      "description": "A complement C3 inhibitor given by injection, approved by the FDA in July 2025 for C3G and a related condition (primary immune complex membranoproliferative glomerulonephritis) in patients age 12 and up. Its phase 3 trial reported a substantial reduction in proteinuria alongside stabilized kidney function and reduced C3 deposits on repeat biopsy."
+      "description": "A complement C3 inhibitor given by injection, approved by the FDA in July 2025 for C3G and a related condition (primary immune complex membranoproliferative glomerulonephritis) in patients age 12 and up. Its pivotal VALIANT trial reported a substantial reduction in proteinuria alongside stabilized kidney function and reduced C3 deposits on repeat biopsy."
     },
     {
       "name": "Kidney biopsy",
@@ -114,6 +123,10 @@
     {
       "date": "2026-07-23",
       "summary": "Initial sourced content published: plain-language overview, research library, lifestyle guidance, and treatments."
+    },
+    {
+      "date": "2026-08-11",
+      "summary": "Added the VALIANT trial (Fakhouri et al., NEJM 2025) to the research library, the pivotal study behind pegcetacoplan's approval."
     }
   ],
   "disclaimer": "This page provides general, plain-language educational information about C3 glomerulonephritis (C3G) and is not medical advice. Treatment options and clinical guidance for this rare disease are changing quickly; always talk with a nephrologist about how anything here applies to your own diagnosis and care."
