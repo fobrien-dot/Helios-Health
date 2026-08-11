@@ -1,0 +1,134 @@
+{
+  "name": "IgA Nephropathy",
+  "shortName": "IgAN",
+  "alsoKnownAs": ["Berger's disease", "IgA nephritis", "synpharyngitic glomerulonephritis"],
+  "summary": "A kidney disease in which a specific form of the antibody IgA builds up in the kidneys' filtering units and causes ongoing inflammation and, over time, scarring.",
+  "category": "rare-disease",
+  "symptoms": [
+    "blood in urine after a cold or sore throat",
+    "brown, tea-colored, or cola-colored urine",
+    "foamy or bubbly urine",
+    "protein in urine found on a routine test",
+    "swelling in the legs, feet, or around the eyes",
+    "high blood pressure",
+    "feeling fine with no symptoms at all, found by accident on a urine test",
+    "kidney disease of unknown cause"
+  ],
+  "overview": {
+    "whatIsIt": "IgA nephropathy happens when a version of the antibody IgA — a protein your immune system normally makes to fight infections — gets stuck in the tiny filtering units of the kidneys, called glomeruli. Once trapped there, it triggers inflammation that, over years, can scar the filters and reduce how well the kidneys work. Doctors don't fully know why some people's immune systems make this sticky, poorly-formed version of IgA, but genetics, gut immune signaling, and random chance all seem to play a role — it is not caused by anything you ate, drank, or did, and it is not contagious. Many people first notice it after a cold or sore throat triggers a flare of visible blood in the urine, though some people have no symptoms at all and are only diagnosed after a routine urine test turns up abnormal. The course varies enormously from person to person, which is exactly why ongoing monitoring by a nephrologist matters.",
+    "keyPoints": [
+      "IgA nephropathy is the most common primary glomerulonephritis (kidney-filter disease) in the world, and a leading cause of kidney failure that starts in the glomeruli.",
+      "It's driven by galactose-deficient IgA1 antibodies that clump together, deposit in the kidneys' glomeruli, and trigger an inflammatory immune response — not by a typical infection or something the patient did.",
+      "A common pattern is episodes of visible blood in the urine within a day or two of a cold, flu, or sore throat, sometimes with ongoing protein in the urine between episodes; some people are diagnosed only from a routine test with no symptoms at all.",
+      "Left untreated, roughly 20% to 40% of people with IgA nephropathy progress to kidney failure within 20 to 25 years of diagnosis, but the course is highly variable — some people have a mild, stable disease for life.",
+      "Blood pressure control and RAS-blocking medicines (ACE inhibitors/ARBs) have long been the foundation of care, and reducing urine protein as much as possible is now understood to be one of the strongest predictors of better long-term kidney outcomes.",
+      "The treatment landscape has shifted quickly: targeted-release budesonide (Tarpeyo, 2021/2023), sparsentan (Filspari, 2023/2024), and iptacopan (Fabhalta, 2024/2026) are the first medicines ever approved by the FDA specifically for IgA nephropathy, and KDIGO issued its first guideline dedicated solely to IgA nephropathy and IgA vasculitis in September 2025."
+    ]
+  },
+  "research": [
+    {
+      "title": "Non-immunosuppressive treatment for IgA nephropathy",
+      "authors": "Tunnicliffe DJ, Reid S, Craig JC, Samuels JA, Molony DA, Strippoli GFM.",
+      "journal": "Cochrane Database of Systematic Reviews",
+      "year": 2024,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10832348/",
+      "summary": "This Cochrane systematic review pooled the available randomized trials on non-immunosuppressive treatments — mainly blood-pressure medicines called ACE inhibitors and ARBs — for IgA nephropathy. It found these medicines reduce protein in the urine and appear to lower the risk of kidney failure, which is why RAS blockade remains the first-line, foundational therapy doctors reach for before adding anything else.",
+      "sourceType": "peer-reviewed-journal"
+    },
+    {
+      "title": "IgA Nephropathy",
+      "authors": "Wyatt RJ, Julian BA.",
+      "journal": "New England Journal of Medicine",
+      "year": 2013,
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMra1206793",
+      "summary": "A widely cited review that lays out, in one place, how IgA nephropathy is diagnosed, what's understood about its underlying immune biology, and how doctors gauge someone's likely long-term course from biopsy findings and lab results. It remains a foundational reference for how the condition is explained to patients and classified by pathologists today.",
+      "sourceType": "peer-reviewed-journal"
+    },
+    {
+      "title": "Efficacy and safety of sparsentan versus irbesartan in patients with IgA nephropathy (PROTECT): 2-year results from a randomised, active-controlled, phase 3 trial",
+      "authors": "Rovin BH, Barratt J, Heerspink HJL, et al.",
+      "journal": "The Lancet",
+      "year": 2023,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37931634/",
+      "summary": "The pivotal trial behind sparsentan's full FDA approval. Over two years, sparsentan reduced urine protein by about 43% (versus about 4% with irbesartan, itself an active blood-pressure medicine) and slowed the loss of kidney function, with complete remission of proteinuria in about 31% of sparsentan patients versus 11% on irbesartan alone. It was the first trial to show a non-immunosuppressive, IgAN-specific drug could meaningfully protect kidney function over the long term.",
+      "sourceType": "peer-reviewed-journal"
+    },
+    {
+      "title": "Iptacopan in IgA Nephropathy — Final 24-Month Data",
+      "authors": "Barratt J, Eren N, Kashihara N, et al.",
+      "journal": "New England Journal of Medicine",
+      "year": 2026,
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2600743",
+      "summary": "The confirmatory two-year results from the APPLAUSE-IgAN trial, which supported iptacopan's full FDA approval in July 2026. Kidney function declined more slowly with iptacopan than placebo (about -3.0 vs -5.7 mL/min/1.73m2 per year, roughly a 48% slowing), alongside sustained reductions in urine protein — evidence that blocking part of the complement immune pathway can preserve kidney function over time, not just reduce a lab marker.",
+      "sourceType": "peer-reviewed-journal"
+    }
+  ],
+  "lifestyle": [
+    {
+      "title": "Diet & nutrition",
+      "guidance": "There's no single diet that treats IgA nephropathy, and needs change as kidney function shifts, so it's worth working with a renal dietitian rather than guessing. NIDDK guidance on chronic kidney disease points to limiting sodium (generally under 2,300 mg/day, mostly by cutting packaged and restaurant foods rather than the saltshaker), watching potassium and phosphorus if bloodwork shows they're running high, and getting individualized advice on protein intake, since both too much and too little can be unhelpful depending on your stage of kidney disease. If you have Medicare and CKD, medical nutrition therapy from a registered dietitian is a covered benefit with a doctor's referral."
+    },
+    {
+      "title": "Physical activity",
+      "guidance": "General kidney-disease guidance, including from the National Kidney Foundation, suggests working toward roughly 150 minutes of moderate activity a week — brisk walking, cycling, or swimming are common choices — built up gradually rather than started hard. Regular activity helps manage blood pressure, which matters directly for IgA nephropathy since blood pressure control is one of the main levers for protecting kidney function over time. Check with your nephrologist before ramping up activity, especially in the weeks around a kidney biopsy."
+    },
+    {
+      "title": "Emotional wellbeing",
+      "guidance": "A diagnosis like this can bring real anxiety, especially with an unpredictable course and a fast-changing set of treatment options to weigh. The National Kidney Foundation notes that depression and anxiety are common among people living with chronic kidney disease, and that talking about mood changes with your care team is a normal, expected part of managing the diagnosis — not a sign you're coping poorly. Peer-support communities, such as those run by the National Kidney Foundation or the IgA Nephropathy Foundation, can connect you with people who understand what living with this specific disease is actually like."
+    }
+  ],
+  "treatments": [
+    {
+      "name": "ACE inhibitors / ARBs",
+      "category": "medication",
+      "description": "Blood pressure medicines that also lower pressure inside the glomeruli and reduce protein leaking into the urine. They're the traditional first-line, foundational therapy for IgA nephropathy, typically maximized before any IgAN-specific medicine is added on top."
+    },
+    {
+      "name": "Targeted-release budesonide (Tarpeyo)",
+      "category": "medication",
+      "description": "An oral corticosteroid capsule designed to release in the part of the gut thought to drive production of the abnormal IgA1 antibodies behind this disease, limiting steroid exposure to the rest of the body. Based on the NefIgArd trial, it received FDA accelerated approval in December 2021 and full approval in December 2023 — the first treatment ever fully approved specifically for IgA nephropathy."
+    },
+    {
+      "name": "Sparsentan (Filspari)",
+      "category": "medication",
+      "description": "A once-daily oral medicine that blocks both endothelin and angiotensin receptors, without suppressing the immune system. Based on the PROTECT trial, it received FDA accelerated approval in February 2023 and full approval in September 2024 for slowing kidney function decline in adults with IgA nephropathy at risk of progression."
+    },
+    {
+      "name": "Iptacopan (Fabhalta)",
+      "category": "medication",
+      "description": "An oral, twice-daily complement factor B inhibitor that dials down an overactive part of the immune system (the alternative complement pathway) implicated in IgAN. It received FDA accelerated approval in August 2024 based on 9-month proteinuria data, and full traditional approval in July 2026 based on 2-year data showing it slowed the loss of kidney function."
+    },
+    {
+      "name": "SGLT2 inhibitors (e.g., dapagliflozin)",
+      "category": "medication",
+      "description": "Originally diabetes medicines, now used as an add-on kidney-protective therapy. A pre-specified analysis of the DAPA-CKD trial's IgA nephropathy subgroup found dapagliflozin reduced the risk of major kidney events, and the 2025 KDIGO guideline recommends considering an SGLT2 inhibitor alongside RAS blockade for patients at higher risk of progression."
+    },
+    {
+      "name": "Kidney biopsy",
+      "category": "procedure",
+      "description": "The only way to confirm an IgA nephropathy diagnosis. A small kidney tissue sample is examined under a microscope for IgA deposits in the glomeruli, and features are scored using the Oxford (MEST-C) classification system, which helps predict how the disease is likely to behave and informs treatment decisions."
+    },
+    {
+      "name": "Routine bloodwork & urine monitoring",
+      "category": "monitoring",
+      "description": "Regular checks of eGFR and creatinine (kidney function), urine protein-to-creatinine ratio, and blood pressure track disease activity and how well treatment is working. The 2025 KDIGO guideline suggests aiming for a urine protein target under 0.5 g/day (ideally under 0.3 g/day) with a stable eGFR, since sustained proteinuria reduction is closely tied to better long-term kidney outcomes."
+    }
+  ],
+  "questionsToAsk": [
+    "Based on my biopsy's Oxford MEST-C score and my labs, how would you describe my personal risk of progressing toward kidney failure?",
+    "What's my current urine protein-to-creatinine ratio and eGFR, and what specific targets are we managing toward?",
+    "Am I already on a maximized dose of an ACE inhibitor or ARB, and how long should we give that before considering anything else?",
+    "Given my situation, would a medicine like budesonide (Tarpeyo), sparsentan (Filspari), or iptacopan (Fabhalta) be worth considering, and what would starting one involve?",
+    "Should I be on an SGLT2 inhibitor in addition to blood pressure medicine, given the 2025 KDIGO guideline update?",
+    "What symptoms — like a big change in urine color, new swelling, or a spike in blood pressure — should prompt me to call your office before my next scheduled visit?"
+  ],
+  "lastReviewed": "2026-08-11",
+  "nextReviewDue": "2027-02-11",
+  "changelog": [
+    {
+      "date": "2026-08-11",
+      "summary": "Initial sourced content published: plain-language overview, research library, lifestyle guidance, and treatments."
+    }
+  ],
+  "disclaimer": "This page provides general, plain-language educational information about IgA nephropathy and is not medical advice. Treatment options for this disease are changing quickly; always talk with a nephrologist about how anything here applies to your own diagnosis and care."
+}
