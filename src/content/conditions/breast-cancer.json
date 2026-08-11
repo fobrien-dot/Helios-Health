@@ -1,0 +1,136 @@
+{
+  "name": "Breast Cancer",
+  "shortName": "BC",
+  "alsoKnownAs": ["Breast carcinoma", "Mammary carcinoma", "Carcinoma of the breast"],
+  "summary": "Breast cancer is a disease in which cells in breast tissue grow out of control, and when found early it is highly treatable, with most people going on to live long, full lives.",
+  "category": "cancer",
+  "symptoms": [
+    "lump in breast",
+    "lump or swelling in armpit",
+    "nipple discharge",
+    "nipple turning inward",
+    "dimpling or puckering of breast skin",
+    "swollen, red, or thickened breast skin",
+    "one breast looking different than the other",
+    "breast pain that won't go away",
+    "abnormal mammogram results",
+    "change in breast size or shape"
+  ],
+  "overview": {
+    "whatIsIt": "Breast cancer happens when cells in the breast start growing and dividing in ways the body can't control, forming a tumor that can sometimes spread beyond the breast if left untreated. It's the most common cancer diagnosed in women in the United States, aside from skin cancers. Risk factors like age, family history, certain inherited gene changes (such as BRCA1/BRCA2), and hormone exposure all play a role, but most people diagnosed have no single identifiable cause — this is not something you did or didn't do. Breast cancer also isn't one single disease: tumors are tested for whether they respond to hormones (estrogen and progesterone receptors) and whether they carry extra HER2 protein, and these features strongly shape which treatments will work best. If you've just been diagnosed, know that treatment and survival have improved substantially in recent decades, and your care team will build a plan specific to your biology and stage.",
+    "keyPoints": [
+      "Breast cancer is the most common cancer among women in the US besides skin cancer; the American Cancer Society estimates about 321,910 new invasive cases will be diagnosed in 2026, and about 1 in 8 women will develop it during their lifetime.",
+      "It's most often found through screening mammography or a lump noticed by the patient or a clinician, then confirmed with additional imaging and a biopsy that identifies the exact cell type.",
+      "Every diagnosis is tested for hormone receptor (ER/PR) and HER2 status — these results define the subtype (for example, HR-positive, HER2-positive, or triple-negative) and are the single biggest factor in choosing treatment.",
+      "Most breast cancers are caught at an early, localized or regional stage, where 5-year relative survival is over 99% for localized disease and about 86% for regional disease, according to American Cancer Society data.",
+      "Treatment has changed substantially in the last decade: newer HER2-targeted antibody-drug conjugates, more precise use of chemotherapy, and genomic testing have improved outcomes and, for some patients, allowed less extensive treatment overall.",
+      "Overall breast cancer death rates have fallen significantly since the late 1980s due to earlier detection and better treatment, even as incidence has risen slightly in recent years, particularly among women under 50."
+    ]
+  },
+  "research": [
+    {
+      "title": "Effects of chemotherapy and hormonal therapy for early breast cancer on recurrence and 15-year survival: an overview of the randomised trials",
+      "authors": "Early Breast Cancer Trialists' Collaborative Group (EBCTCG)",
+      "journal": "The Lancet",
+      "year": 2005,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/15894097/",
+      "summary": "This landmark analysis pooled data from nearly 145,000 women across 194 clinical trials to test whether chemotherapy and hormone-blocking therapy given after surgery actually extend lives, not just delay recurrence. It found these treatments meaningfully reduce the chance of the cancer coming back and can cut 15-year breast cancer death rates substantially for many patients, especially those with hormone-receptor-positive disease. This body of evidence is part of why oncologists routinely recommend additional treatment after surgery, even when a tumor has been fully removed.",
+      "sourceType": "peer-reviewed-journal"
+    },
+    {
+      "title": "Screening for breast cancer with mammography",
+      "authors": "Gøtzsche PC, Jørgensen KJ",
+      "journal": "Cochrane Database of Systematic Reviews",
+      "year": 2013,
+      "url": "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD001877.pub5/full",
+      "summary": "This Cochrane systematic review combined results from seven large randomized trials of mammography screening involving about 600,000 women to weigh its real benefits against its downsides. It concluded that screening likely lowers the chance of dying from breast cancer, though the size of that benefit is debated, and that it also leads some women to be diagnosed and treated for cancers that would never have caused harm (overdiagnosis). It's a useful, honest reminder that screening involves real trade-offs worth discussing with a doctor rather than a guaranteed win.",
+      "sourceType": "peer-reviewed-journal"
+    },
+    {
+      "title": "Breast cancer",
+      "authors": "Harbeck N, Penault-Llorca F, Cortes J, Gnant M, Houssami N, Poortmans P, Ruddy K, Tsang J, Cardoso F",
+      "journal": "Nature Reviews Disease Primers",
+      "year": 2019,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31548545/",
+      "summary": "This comprehensive review brings together current understanding of breast cancer from leading researchers, covering how the disease develops, how doctors classify it into subtypes, and how treatment has shifted toward matching therapy to a tumor's specific biology rather than a one-size-fits-all approach. It explains why the same diagnosis can mean very different treatment paths depending on hormone receptor and HER2 status. It's a solid single reference for understanding why your own subtype and stage will shape your specific plan.",
+      "sourceType": "peer-reviewed-journal"
+    },
+    {
+      "title": "Survival with Trastuzumab Emtansine in Residual HER2-Positive Breast Cancer",
+      "authors": "Geyer CE Jr, Untch M, Huang CS, Mano MS, Mamounas EP, Wolmark N, Rastogi P, Schneeweiss A, Redondo A, Fischer HH, et al.",
+      "journal": "New England Journal of Medicine",
+      "year": 2025,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39813643/",
+      "summary": "This trial (KATHERINE) followed over 1,400 patients with HER2-positive early breast cancer who still had some cancer left after pre-surgery chemotherapy, comparing an antibody-drug conjugate (trastuzumab emtansine, T-DM1) against standard trastuzumab alone. After more than 8 years of follow-up, patients who received T-DM1 had meaningfully better overall survival and a lower chance of the cancer returning. It's a concrete example of how treatment for HER2-positive disease has advanced, and why finding residual cancer after initial treatment can change what comes next.",
+      "sourceType": "peer-reviewed-journal"
+    }
+  ],
+  "lifestyle": [
+    {
+      "title": "Diet & nutrition",
+      "guidance": "There's no single food or diet that causes or cures breast cancer, but the American Cancer Society and the American Institute for Cancer Research recommend an eating pattern built around vegetables, fruits, whole grains, and legumes while limiting red and processed meat, alcohol, and highly processed foods. Limiting alcohol matters in particular, since even moderate intake is linked to higher breast cancer risk and, in some studies, recurrence. If treatment affects your appetite or taste, ask your care team about a referral to an oncology dietitian rather than trying to overhaul your diet on your own."
+    },
+    {
+      "title": "Physical activity",
+      "guidance": "The American Cancer Society and ASCO survivorship guidelines recommend aiming for at least 150-300 minutes of moderate activity (or 75-150 minutes of vigorous activity) per week, along with strength training twice a week, as tolerated during and after treatment. Regular activity is associated with better treatment tolerance, less fatigue, and in some studies, improved outcomes — but it's meant to be built up gradually, and it's fine to start small and check with your oncology team about what's safe for you, especially around surgery or if you have lymphedema risk."
+    },
+    {
+      "title": "Emotional wellbeing",
+      "guidance": "A breast cancer diagnosis is stressful, and that's expected, not a sign you're handling it wrong. NCCN survivorship and distress management guidelines recommend that every patient be routinely screened for anxiety, depression, and distress throughout treatment, and that support — whether counseling, medication, support groups, or peer programs like the American Cancer Society's Reach To Recovery — be offered rather than left for patients to seek out alone. Tell your care team how you're actually feeling; they can connect you to real support rather than you having to search for it yourself."
+    }
+  ],
+  "treatments": [
+    {
+      "name": "Surgery (lumpectomy or mastectomy)",
+      "category": "procedure",
+      "description": "Removing the tumor is part of the treatment plan for nearly all early-stage breast cancers. A lumpectomy removes just the tumor and some surrounding tissue, usually followed by radiation, while a mastectomy removes the entire breast. Which one is recommended — and whether breast reconstruction is an option — depends on tumor size and location, genetics, and personal preference, and is worth discussing in detail with your surgeon."
+    },
+    {
+      "name": "Radiation therapy",
+      "category": "procedure",
+      "description": "Radiation uses targeted high-energy beams to kill remaining cancer cells in the breast, chest wall, or nearby lymph nodes, most often after lumpectomy and sometimes after mastectomy. The schedule, which can range from a few days to several weeks, depends on the surgery performed and the tumor's characteristics."
+    },
+    {
+      "name": "Chemotherapy",
+      "category": "medication",
+      "description": "Chemotherapy uses drugs that target fast-dividing cells and may be given before surgery (neoadjuvant, to shrink a tumor) or after (adjuvant, to lower recurrence risk). Not everyone needs it — the decision depends on tumor stage, subtype, and sometimes genomic tests that estimate individual recurrence risk."
+    },
+    {
+      "name": "Hormone (endocrine) therapy",
+      "category": "medication",
+      "description": "For hormone-receptor-positive tumors, the most common subtype, drugs such as tamoxifen or aromatase inhibitors block or lower estrogen's effect on cancer cells and are typically taken for 5-10 years to reduce recurrence risk. This does not apply to hormone-receptor-negative cancers, so whether it's relevant to you depends entirely on your pathology results."
+    },
+    {
+      "name": "HER2-targeted therapy",
+      "category": "medication",
+      "description": "Roughly 1 in 5 breast cancers overexpress the HER2 protein. Drugs like trastuzumab, pertuzumab, and antibody-drug conjugates such as trastuzumab emtansine specifically target HER2-positive cells and have substantially improved survival for this subtype when used alongside surgery, chemotherapy, or both."
+    },
+    {
+      "name": "Other targeted and immune therapies",
+      "category": "medication",
+      "description": "Depending on your specific tumor markers, genetic test results, or subtype, your oncologist may discuss CDK4/6 inhibitors, PARP inhibitors for certain BRCA-related cancers, or immunotherapy, particularly for triple-negative disease. Eligibility for these varies widely and is determined by pathology and genetic testing specific to your case."
+    },
+    {
+      "name": "Follow-up surveillance",
+      "category": "monitoring",
+      "description": "After active treatment ends, care shifts to regular follow-up visits, physical exams, and mammograms (typically annual) to watch for recurrence or a new cancer, along with monitoring for long-term treatment side effects. Your specific follow-up schedule will be tailored to your treatment history by your care team."
+    }
+  ],
+  "questionsToAsk": [
+    "What is the exact stage and subtype of my breast cancer (hormone receptor and HER2 status), and how does that change my treatment options?",
+    "Am I a candidate for breast-conserving surgery (lumpectomy), or is mastectomy recommended, and why?",
+    "Will I need chemotherapy, and if so, will it be given before or after surgery?",
+    "If my cancer is HER2-positive, what targeted therapies are recommended for me, and for how long will I need them?",
+    "What side effects should I expect from my specific treatment plan, and how will we manage them?",
+    "What will my long-term follow-up and monitoring schedule look like once active treatment ends?"
+  ],
+  "lastReviewed": "2026-08-11",
+  "nextReviewDue": "2027-02-11",
+  "changelog": [
+    {
+      "date": "2026-08-11",
+      "summary": "Initial sourced content published: plain-language overview, research library, lifestyle guidance, and treatments."
+    }
+  ],
+  "disclaimer": "This page is meant to help you understand breast cancer in plain language and prepare for conversations with your care team — it is not medical advice and can't account for your specific diagnosis, test results, or health history. Treatment decisions should always be made with your oncology team, who know the full details of your case."
+}
